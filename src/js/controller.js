@@ -12,9 +12,7 @@ import 'regenerator-runtime';
 import { async } from 'regenerator-runtime';
 
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
+
 
 ///////////////////////////////////////
 
@@ -58,7 +56,7 @@ const controlSearchResults = async function () {
     //2. Load search results
     await model.loadSearchResults(query);
 
-    //3Render results
+    //3 Render results
     resultView.render(model.getSearchResultsPage());
 
     //4 Render intial pagination button
@@ -85,7 +83,6 @@ const controlServings = function (newServings) {
   model.updateServings(newServings)
 
   //update the recipe view
-  // recipeView.render(model.state.recipe)
   recipeView.update(model.state.recipe)
 }
 
