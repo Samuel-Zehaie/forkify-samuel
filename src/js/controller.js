@@ -7,7 +7,7 @@ import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
 
-import 'core-js/stable';
+import 'core-js/actual';
 import 'regenerator-runtime';
 import { async } from 'regenerator-runtime';
 
